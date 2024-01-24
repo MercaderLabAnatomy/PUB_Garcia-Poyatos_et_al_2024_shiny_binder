@@ -18,7 +18,7 @@ list(tags$style(HTML(".navbar-default .navbar-nav { font-weight: bold; font-size
  
    
 ### Page title 
-titlePanel("scRNAseq Analysis Of Regenerating Zebrafish Heart"),  
+titlePanel("scRNAseq Analysis Of Regenerating Zebrafish Hearts"),  
 # add text to the title panel
 p("Reanalysis of scRNAseq data from",a("GSE145979", href = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145982",target="_blank"), "performed on zebrafish hearts from uninjured, 2dpi (days post injury), 7dpi, and 14dpi hearts."),
 tags$br(),
@@ -748,7 +748,10 @@ tabPanel(
 br(), 
 p("", style = "font-size: 125%;"), 
 tags$p(strong("Citations:")),
+p(em("Original data from:")),
 p("Ma, H., Liu, Z., Yang, Y., Feng, D., Dong, Y., Garbutt, T. A., Hu, Z., Wang, L., Luan, C., Cooper, C. D., Li, Y., Welch, J. D., Qian, L., & Liu, J. (2021). Functional coordination of non-myocytes plays a key role in adult zebrafish heart regeneration. EMBO reports, 22(11), e52901.",a(href="https://doi.org/10.15252/embr.202052901", "https://doi.org/10.15252/embr.202152901")),
+p(em("Reanalysed data from:")),
+p("Garcia-Poyotas et al, 2024."),
 # tags$br(),
 p(em("This webpage was made using "), a("ShinyCell", 
   href = "https://github.com/SGDDNB/ShinyCell",target="_blank")),
